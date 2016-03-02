@@ -3,12 +3,10 @@ package main
 import (
 	"fmt"
 	"net/http"
-
 	"os"
-	"io"
-	"strings"
 
-	"controller"
+	"file-service/controller"
+	_ "file-service/config"
 )
 
 func init() {
@@ -32,14 +30,12 @@ func init() {
 	}
 }
 
-var savefilename int32 = 0
-
 func main() {
 	fmt.Println("file service start...")
-	http.HandleFunc("/downfile", controller.downFile)
-	http.HandleFunc("/upfile", controller.upFile)
+	http.HandleFunc("/downfile", controller.DownFile)
+	http.HandleFunc("/upfile", controller.UpFile)
 
-	http.HandleFunc("/uptest", controller.upTest)
+	http.HandleFunc("/uptest", controller.UpTest)
 
 	error := http.ListenAndServe(":8080", nil)
 	if error != nil {
