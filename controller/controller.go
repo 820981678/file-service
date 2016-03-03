@@ -5,13 +5,11 @@ import(
 	"net/http"
 	"os"
 	"io"
-	"strings"
+	"path"
 
-	"file-service/config"
+	_ "file-service/config"
 	"file-service/utils"
 )
-
-var savefilename int32 = 0
 
 func DownFile(response http.ResponseWriter, request *http.Request) {
 	http.ServeFile(response, request, "D://liuyan.jpg")
@@ -27,10 +25,11 @@ func UpFile(response http.ResponseWriter, request *http.Request) {
 	defer file.Close()
 
 	filename := fileh.Filename;
-	filehz := filename[strings.LastIndex(filename, ".") : ]
+	filehz := path.Ext(filename)//filename[strings.LastIndex(filename, ".") : ]
 	fmt.Printf("upfile name: %s, hz: %s \n", filename, filehz)
 
-	uf, err := os.Create(config.ApplicationConfig.SaveRootPath + fmt.Sprintf("%d", savefilename) + filehz)
+	id, savefilename := utils.GetSavePath(filehz)
+	uf, err := os.Create(savefilename)
 	//uf, err := os.OpenFile("D://111/111.jpg", os.O_WRONLY|os.O_CREATE, 0666)
 	if err != nil {
 		fmt.Println("save file error")
@@ -38,12 +37,12 @@ func UpFile(response http.ResponseWriter, request *http.Request) {
 		return
 	}
 	defer uf.Close()
-	savefilename++
 
 	io.Copy(uf, file);
-	response.Write([]byte(`{"code":0}`))
+	response.Write([]byte("{\"code\":0, \"fileid\":\"" + id + "\"}"))
 }
 
 func UpTest(rw http.ResponseWriter, r *http.Request) {
+
 	io.WriteString(rw, "<html><head><title>上传测试</title></head><body><form action='../upfile' method=\"post\" enctype=\"multipart/form-data\"><label>上传图片</label><input type=\"file\" name='file'  /><br/><label><input type=\"submit\" value=\"上传图片\"/></label></form></body></html>")
 }

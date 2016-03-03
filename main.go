@@ -6,11 +6,11 @@ import (
 	"os"
 
 	"file-service/controller"
-	_ "file-service/config"
+	"file-service/global"
 )
 
 func init() {
-	info, err := os.Stat("D://fileservice")
+	info, err := os.Stat(global.ApplicationConfig.SaveRootPath)
 
 	temp := true
 	if err != nil {
@@ -20,7 +20,7 @@ func init() {
 	}
 
 	if !temp {
-		err := os.Mkdir("D://fileservice", os.ModePerm)
+		err := os.Mkdir(global.ApplicationConfig.SaveRootPath, os.ModePerm)
 		if err != nil {
 			panic(err)
 		}
