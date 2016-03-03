@@ -1,15 +1,15 @@
 package utils
 
-import(
+import (
 	"strings"
-	
+
 	"github.com/satori/go.uuid"
 
 	"file-service/global"
 )
 
 func GetSavePath(filehz string) (string, string) {
-	id := uuid.NewV4().String();
+	id := uuid.NewV4().String()
 
 	id = strings.Replace(id, "-", "", -1)
 
