@@ -7,9 +7,12 @@ import (
 
 	"file-service/controller"
 	"file-service/global"
+
+	_"file-service/config"
 )
 
-func init() {
+func checkSaveDir() {
+	fmt.Println(global.ApplicationConfig.SaveRootPath)
 	info, err := os.Stat(global.ApplicationConfig.SaveRootPath)
 
 	temp := true
@@ -31,6 +34,8 @@ func init() {
 }
 
 func main() {
+	checkSaveDir()
+
 	fmt.Println("file service start...")
 	http.HandleFunc("/downfile", controller.DownFile)
 	http.HandleFunc("/upfile", controller.UpFile)

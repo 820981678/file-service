@@ -7,12 +7,24 @@ import(
 	"io"
 	"path"
 
-	_ "file-service/config"
 	"file-service/utils"
+	"file-service/global"
 )
 
 func DownFile(response http.ResponseWriter, request *http.Request) {
-	http.ServeFile(response, request, "D://liuyan.jpg")
+	err := request.ParseForm()
+	if err != nil {
+		response.Write([]byte(`{"code":-1}`))
+		return
+	}
+
+	fileid := request.Form.Get("fileid")
+	suffix := utils.GetSuffixValue_F(fileid[32:])
+	filepath := global.ApplicationConfig.SaveRootPath + fileid + suffix
+	
+	fmt.Println("<--- down file fileid: " + fileid + " suffix: " + suffix)
+
+	http.ServeFile(response, request, filepath)
 }
 
 func UpFile(response http.ResponseWriter, request *http.Request) {
@@ -25,10 +37,16 @@ func UpFile(response http.ResponseWriter, request *http.Request) {
 	defer file.Close()
 
 	filename := fileh.Filename;
-	filehz := path.Ext(filename)//filename[strings.LastIndex(filename, ".") : ]
-	fmt.Printf("upfile name: %s, hz: %s \n", filename, filehz)
+	filehz := path.Ext(filename)
+	
+	fmt.Printf("---> up file name: %s, suffix: %s \n", filename, filehz)
 
-	id, savefilename := utils.GetSavePath(filehz)
+	id, savefilename, ok := utils.GetSavePath(filehz)
+	if !ok {
+		response.Write([]byte(`{"code":-1, "message": "bu bei zhi chi de wen jian"}`))
+		return
+	}
+
 	uf, err := os.Create(savefilename)
 	//uf, err := os.OpenFile("D://111/111.jpg", os.O_WRONLY|os.O_CREATE, 0666)
 	if err != nil {

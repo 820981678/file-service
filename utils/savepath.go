@@ -8,10 +8,15 @@ import (
 	"file-service/global"
 )
 
-func GetSavePath(filehz string) (string, string) {
+func GetSavePath(filehz string) (string, string, bool) {
 	id := uuid.NewV4().String()
-
 	id = strings.Replace(id, "-", "", -1)
 
-	return id, global.ApplicationConfig.SaveRootPath + id + filehz
+	ok, suffix_id := GetSuffixValue(filehz)
+	if !ok {
+		return "", "", false
+	}
+
+	id = id + suffix_id
+	return id, global.ApplicationConfig.SaveRootPath + id + filehz, true
 }

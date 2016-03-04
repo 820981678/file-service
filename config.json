@@ -1,4 +1,4 @@
 {
 	"ListenAddr": ":8080",
-	"SaveRootPath": "D://fileservice/"
+	"SaveRootPath": "/home/hxh/fileservice/"
 }
