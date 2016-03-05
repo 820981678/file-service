@@ -1,31 +1,13 @@
 package controller
 
-import(
+import (
+	"file-service/utils"
 	"fmt"
+	"io"
 	"net/http"
 	"os"
-	"io"
 	"path"
-
-	"file-service/utils"
-	"file-service/global"
 )
-
-func DownFile(response http.ResponseWriter, request *http.Request) {
-	err := request.ParseForm()
-	if err != nil {
-		response.Write([]byte(`{"code":-1}`))
-		return
-	}
-
-	fileid := request.Form.Get("fileid")
-	suffix := utils.GetSuffixValue_F(fileid[32:])
-	filepath := global.ApplicationConfig.SaveRootPath + fileid + suffix
-	
-	fmt.Println("<--- down file fileid: " + fileid + " suffix: " + suffix)
-
-	http.ServeFile(response, request, filepath)
-}
 
 func UpFile(response http.ResponseWriter, request *http.Request) {
 	file, fileh, error := request.FormFile("file")
@@ -36,9 +18,9 @@ func UpFile(response http.ResponseWriter, request *http.Request) {
 	}
 	defer file.Close()
 
-	filename := fileh.Filename;
+	filename := fileh.Filename
 	filehz := path.Ext(filename)
-	
+
 	fmt.Printf("---> up file name: %s, suffix: %s \n", filename, filehz)
 
 	id, savefilename, ok := utils.GetSavePath(filehz)
@@ -56,7 +38,7 @@ func UpFile(response http.ResponseWriter, request *http.Request) {
 	}
 	defer uf.Close()
 
-	io.Copy(uf, file);
+	io.Copy(uf, file)
 	response.Write([]byte("{\"code\":0, \"fileid\":\"" + id + "\"}"))
 }
 

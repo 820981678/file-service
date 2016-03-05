@@ -1,7 +1,10 @@
 package utils
 
 import (
-	"fmt"	
+	"bufio"
+	"io"
+	"os"
+	"strings"
 )
 
 var SuffixMap map[string]string
@@ -10,22 +13,40 @@ var SuffixMap_F map[string]string
 
 var suffixValueIndex = 100
 
-func init() {
+func Init_suffix() {
+	LoadLogger.Infoln("load suffix start...")
+
 	SuffixMap = make(map[string]string)
-	SuffixMap[".jpg"] = "100"
-	SuffixMap[".jpeg"] = "101"
-	SuffixMap[".png"] = "102"
-	SuffixMap[".go"] = "103"
-	SuffixMap[".exe"] = "104"
-	SuffixMap[".rar"] = "105"
+	SuffixMap_F = make(map[string]string)
+
+	file, err := os.Open("suffix.properties")
+	if err != nil {
+		LoadLogger.Fatalln(err)
+	}
+	defer file.Close()
+
+	buff := bufio.NewReader(file)
+	for {
+		line, err := buff.ReadString('\n')
+		line = strings.Replace(line, "\n", "", -1)
+		var temp []string = strings.Split(line, "=")
+		if len(temp) != 2 {
+			LoadLogger.Fatalln("pei zhi chan shu error")
+		}
+
+		SuffixMap[temp[0]] = temp[1]
+
+		if io.EOF == err {
+			break
+		}
+	}
 
 	SuffixMap_F = make(map[string]string)
 	for k, v := range SuffixMap {
 		SuffixMap_F[v] = k
 	}
 
-	fmt.Println(SuffixMap)
-	fmt.Println(SuffixMap_F)
+	LoadLogger.Infoln("suffix load success")
 }
 
 func GetSuffixValue(key string) (bool, string) {
@@ -39,4 +60,3 @@ func GetSuffixValue(key string) (bool, string) {
 func GetSuffixValue_F(key string) string {
 	return SuffixMap_F[key]
 }
-

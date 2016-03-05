@@ -1,16 +1,16 @@
 package utils
 
 import (
+	"fmt"
 	"log"
 	"os"
-	"fmt"
 )
 
 var LoadLogger *MyLogger
 
 var ControllerLogger *MyLogger
 
-func init() {
+func Init_log() {
 	logfile, err := os.OpenFile("systemlog.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
 		panic(err)

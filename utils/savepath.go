@@ -4,8 +4,6 @@ import (
 	"strings"
 
 	"github.com/satori/go.uuid"
-
-	"file-service/global"
 )
 
 func GetSavePath(filehz string) (string, string, bool) {
@@ -18,5 +16,5 @@ func GetSavePath(filehz string) (string, string, bool) {
 	}
 
 	id = id + suffix_id
-	return id, global.ApplicationConfig.SaveRootPath + id + filehz, true
+	return id, ApplicationConfig.SaveRootPath + id + filehz, true
 }

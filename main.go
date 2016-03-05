@@ -6,14 +6,14 @@ import (
 	"os"
 
 	"file-service/controller"
-	"file-service/global"
 
-	_"file-service/config"
+	"file-service/utils"
 )
 
 func checkSaveDir() {
-	fmt.Println(global.ApplicationConfig.SaveRootPath)
-	info, err := os.Stat(global.ApplicationConfig.SaveRootPath)
+
+	fmt.Println(utils.ApplicationConfig.SaveRootPath)
+	info, err := os.Stat(utils.ApplicationConfig.SaveRootPath)
 
 	temp := true
 	if err != nil {
@@ -23,7 +23,7 @@ func checkSaveDir() {
 	}
 
 	if !temp {
-		err := os.Mkdir(global.ApplicationConfig.SaveRootPath, os.ModePerm)
+		err := os.Mkdir(utils.ApplicationConfig.SaveRootPath, os.ModePerm)
 		if err != nil {
 			panic(err)
 		}
@@ -34,6 +34,10 @@ func checkSaveDir() {
 }
 
 func main() {
+	utils.Init_log()
+	utils.Init_suffix()
+	utils.Init_config()
+
 	checkSaveDir()
 
 	fmt.Println("file service start...")
