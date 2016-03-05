@@ -35,7 +35,7 @@ func Init_suffix() {
 		}
 
 		//check
-		if !strings.HasPrefix(temp[0], ".") || len(temp[1]) != 3 {
+		if len(temp[1]) != 3 {
 			LoadLogger.Fatalln("pei zhi chan shu ge shi error")
 		}
 

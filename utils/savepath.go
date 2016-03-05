@@ -1,9 +1,9 @@
 package utils
 
 import (
-	"strings"
-
 	"github.com/satori/go.uuid"
+	"strings"
+	"time"
 )
 
 func GetSavePath(filehz string) (string, string, bool) {
@@ -15,6 +15,7 @@ func GetSavePath(filehz string) (string, string, bool) {
 		return "", "", false
 	}
 
-	id = id + suffix_id
+	t := strings.Replace(time.Now().Format("2006-01-01"), "-", "", -1)
+	id = id + suffix_id + t
 	return id, ApplicationConfig.SaveRootPath + id + filehz, true
 }

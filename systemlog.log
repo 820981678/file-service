@@ -122,3 +122,383 @@
 [load]2016/03/05 14:56:56.290251 loading config start...
 
 [load]2016/03/05 14:56:56.290625 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 15:21:21.810697 LoadLogger init success
+
+[load]2016/03/05 15:21:21.810972 ControllerLogger init success
+
+[load]2016/03/05 15:21:21.811051 load suffix start...
+
+[load]2016/03/05 15:21:21.811144 suffix load success
+
+[load]2016/03/05 15:21:21.811233 loading config start...
+
+[load]2016/03/05 15:21:21.811616 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 15:21:34.374052 LoadLogger init success
+
+[load]2016/03/05 15:21:34.374202 ControllerLogger init success
+
+[load]2016/03/05 15:21:34.374247 load suffix start...
+
+[load]2016/03/05 15:21:34.374305 pei zhi chan shu ge shi error
+
+[load]2016/03/05 15:23:07.365266 LoadLogger init success
+
+[load]2016/03/05 15:23:07.365544 ControllerLogger init success
+
+[load]2016/03/05 15:23:07.366295 load suffix start...
+
+[load]2016/03/05 15:23:07.366485 suffix load success
+
+[load]2016/03/05 15:23:07.366568 loading config start...
+
+[load]2016/03/05 15:23:07.367014 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 15:24:47.620809 LoadLogger init success
+
+[load]2016/03/05 15:24:47.620915 ControllerLogger init success
+
+[load]2016/03/05 15:24:47.620942 load suffix start...
+
+[load]2016/03/05 15:24:47.620991 suffix load success
+
+[load]2016/03/05 15:24:47.621015 loading config start...
+
+[load]2016/03/05 15:24:47.621260 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 15:25:25.434548 LoadLogger init success
+
+[load]2016/03/05 15:25:25.434648 ControllerLogger init success
+
+[load]2016/03/05 15:25:25.434667 load suffix start...
+
+[load]2016/03/05 15:25:25.434709 suffix load success
+
+[load]2016/03/05 15:25:25.434974 loading config start...
+
+[load]2016/03/05 15:25:25.435170 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 15:26:30.418306 LoadLogger init success
+
+[load]2016/03/05 15:26:30.418571 ControllerLogger init success
+
+[load]2016/03/05 15:26:30.418599 load suffix start...
+
+[load]2016/03/05 15:26:30.418633 suffix load success
+
+[load]2016/03/05 15:26:30.418648 loading config start...
+
+[load]2016/03/05 15:26:30.418831 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 17:30:22.053668 LoadLogger init success
+
+[load]2016/03/05 17:30:22.053774 ControllerLogger init success
+
+[load]2016/03/05 17:30:22.054344 load suffix start...
+
+[load]2016/03/05 17:30:22.054431 suffix load success
+
+[load]2016/03/05 17:30:22.054516 loading config start...
+
+[load]2016/03/05 17:30:22.054885 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 17:31:59.778917 LoadLogger init success
+
+[load]2016/03/05 17:31:59.779455 ControllerLogger init success
+
+[load]2016/03/05 17:31:59.780402 load suffix start...
+
+[load]2016/03/05 17:31:59.780507 suffix load success
+
+[load]2016/03/05 17:31:59.780604 loading config start...
+
+[load]2016/03/05 17:31:59.781225 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 17:33:09.424755 LoadLogger init success
+
+[load]2016/03/05 17:33:09.425084 ControllerLogger init success
+
+[load]2016/03/05 17:33:09.425145 load suffix start...
+
+[load]2016/03/05 17:33:09.425256 suffix load success
+
+[load]2016/03/05 17:33:09.425314 loading config start...
+
+[load]2016/03/05 17:33:09.425627 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 17:39:57.526911 LoadLogger init success
+
+[load]2016/03/05 17:39:57.527196 ControllerLogger init success
+
+[load]2016/03/05 17:39:57.527317 load suffix start...
+
+[load]2016/03/05 17:39:57.527396 suffix load success
+
+[load]2016/03/05 17:39:57.527480 loading config start...
+
+[load]2016/03/05 17:39:57.527787 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 17:40:45.202373 LoadLogger init success
+
+[load]2016/03/05 17:40:45.202484 ControllerLogger init success
+
+[load]2016/03/05 17:40:45.202510 load suffix start...
+
+[load]2016/03/05 17:40:45.202549 suffix load success
+
+[load]2016/03/05 17:40:45.202569 loading config start...
+
+[load]2016/03/05 17:40:45.202695 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 17:41:51.433489 LoadLogger init success
+
+[load]2016/03/05 17:41:51.433582 ControllerLogger init success
+
+[load]2016/03/05 17:41:51.433604 load suffix start...
+
+[load]2016/03/05 17:41:51.433649 suffix load success
+
+[load]2016/03/05 17:41:51.433671 loading config start...
+
+[load]2016/03/05 17:41:51.433787 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 17:46:56.410915 LoadLogger init success
+
+[load]2016/03/05 17:46:56.411195 ControllerLogger init success
+
+[load]2016/03/05 17:46:56.411287 load suffix start...
+
+[load]2016/03/05 17:46:56.411459 suffix load success
+
+[load]2016/03/05 17:46:56.411554 loading config start...
+
+[load]2016/03/05 17:46:56.411952 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 17:47:21.186860 LoadLogger init success
+
+[load]2016/03/05 17:47:21.186962 ControllerLogger init success
+
+[load]2016/03/05 17:47:21.187480 load suffix start...
+
+[load]2016/03/05 17:47:21.187563 suffix load success
+
+[load]2016/03/05 17:47:21.187581 loading config start...
+
+[load]2016/03/05 17:47:21.187689 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 17:50:35.637782 LoadLogger init success
+
+[load]2016/03/05 17:50:35.637873 ControllerLogger init success
+
+[load]2016/03/05 17:50:35.637896 load suffix start...
+
+[load]2016/03/05 17:50:35.637941 suffix load success
+
+[load]2016/03/05 17:50:35.637964 loading config start...
+
+[load]2016/03/05 17:50:35.638074 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 17:59:52.483453 LoadLogger init success
+
+[load]2016/03/05 17:59:52.483543 ControllerLogger init success
+
+[load]2016/03/05 17:59:52.483559 load suffix start...
+
+[load]2016/03/05 17:59:52.483591 suffix load success
+
+[load]2016/03/05 17:59:52.483604 loading config start...
+
+[load]2016/03/05 17:59:52.483700 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 18:02:07.655363 LoadLogger init success
+
+[load]2016/03/05 18:02:07.655452 ControllerLogger init success
+
+[load]2016/03/05 18:02:07.655475 load suffix start...
+
+[load]2016/03/05 18:02:07.655521 suffix load success
+
+[load]2016/03/05 18:02:07.655544 loading config start...
+
+[load]2016/03/05 18:02:07.655657 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 18:09:07.740550 LoadLogger init success
+
+[load]2016/03/05 18:09:07.740828 ControllerLogger init success
+
+[load]2016/03/05 18:09:07.741187 load suffix start...
+
+[load]2016/03/05 18:09:07.741286 suffix load success
+
+[load]2016/03/05 18:09:07.741324 loading config start...
+
+[load]2016/03/05 18:09:07.741556 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 18:19:18.186247 LoadLogger init success
+
+[load]2016/03/05 18:19:18.186505 ControllerLogger init success
+
+[load]2016/03/05 18:19:18.186567 load suffix start...
+
+[load]2016/03/05 18:19:18.186679 suffix load success
+
+[load]2016/03/05 18:19:18.186731 loading config start...
+
+[load]2016/03/05 18:19:18.187072 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 18:19:54.181595 LoadLogger init success
+
+[load]2016/03/05 18:19:54.181682 ControllerLogger init success
+
+[load]2016/03/05 18:19:54.181705 load suffix start...
+
+[load]2016/03/05 18:19:54.181752 suffix load success
+
+[load]2016/03/05 18:19:54.181775 loading config start...
+
+[load]2016/03/05 18:19:54.181892 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 19:52:27.638058 LoadLogger init success
+
+[load]2016/03/05 19:52:27.638144 ControllerLogger init success
+
+[load]2016/03/05 19:52:27.638161 load suffix start...
+
+[load]2016/03/05 19:52:27.638194 suffix load success
+
+[load]2016/03/05 19:52:27.638210 loading config start...
+
+[load]2016/03/05 19:52:27.638306 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 19:57:36.667022 LoadLogger init success
+
+[load]2016/03/05 19:57:36.667148 ControllerLogger init success
+
+[load]2016/03/05 19:57:36.667172 load suffix start...
+
+[load]2016/03/05 19:57:36.667220 suffix load success
+
+[load]2016/03/05 19:57:36.667242 loading config start...
+
+[load]2016/03/05 19:57:36.667354 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 20:04:34.806107 LoadLogger init success
+
+[load]2016/03/05 20:04:34.806396 ControllerLogger init success
+
+[load]2016/03/05 20:04:34.806476 load suffix start...
+
+[load]2016/03/05 20:04:34.806547 suffix load success
+
+[load]2016/03/05 20:04:34.806621 loading config start...
+
+[load]2016/03/05 20:04:34.806941 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 20:05:47.039987 LoadLogger init success
+
+[load]2016/03/05 20:05:47.040077 ControllerLogger init success
+
+[load]2016/03/05 20:05:47.040095 load suffix start...
+
+[load]2016/03/05 20:05:47.040131 suffix load success
+
+[load]2016/03/05 20:05:47.040147 loading config start...
+
+[load]2016/03/05 20:05:47.040252 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 20:09:11.272801 LoadLogger init success
+
+[load]2016/03/05 20:09:11.273112 ControllerLogger init success
+
+[load]2016/03/05 20:09:11.273155 load suffix start...
+
+[load]2016/03/05 20:09:11.273244 suffix load success
+
+[load]2016/03/05 20:09:11.273289 loading config start...
+
+[load]2016/03/05 20:09:11.273603 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 20:42:39.589442 LoadLogger init success
+
+[load]2016/03/05 20:42:39.589532 ControllerLogger init success
+
+[load]2016/03/05 20:42:39.589549 load suffix start...
+
+[load]2016/03/05 20:42:39.589582 suffix load success
+
+[load]2016/03/05 20:42:39.589595 loading config start...
+
+[load]2016/03/05 20:42:39.589696 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 20:58:06.701507 LoadLogger init success
+
+[load]2016/03/05 20:58:06.701782 ControllerLogger init success
+
+[load]2016/03/05 20:58:06.701853 load suffix start...
+
+[load]2016/03/05 20:58:06.701915 suffix load success
+
+[load]2016/03/05 20:58:06.701941 loading config start...
+
+[load]2016/03/05 20:58:06.702224 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 20:58:57.151609 LoadLogger init success
+
+[load]2016/03/05 20:58:57.151946 ControllerLogger init success
+
+[load]2016/03/05 20:58:57.152052 load suffix start...
+
+[load]2016/03/05 20:58:57.152207 suffix load success
+
+[load]2016/03/05 20:58:57.152278 loading config start...
+
+[load]2016/03/05 20:58:57.152639 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 21:01:11.878984 LoadLogger init success
+
+[load]2016/03/05 21:01:11.879080 ControllerLogger init success
+
+[load]2016/03/05 21:01:11.879283 load suffix start...
+
+[load]2016/03/05 21:01:11.879347 suffix load success
+
+[load]2016/03/05 21:01:11.879368 loading config start...
+
+[load]2016/03/05 21:01:11.879508 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 21:09:12.478656 LoadLogger init success
+
+[load]2016/03/05 21:09:12.478746 ControllerLogger init success
+
+[load]2016/03/05 21:09:12.478769 load suffix start...
+
+[load]2016/03/05 21:09:12.478821 suffix load success
+
+[load]2016/03/05 21:09:12.478843 loading config start...
+
+[load]2016/03/05 21:09:12.478958 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 21:09:44.184966 LoadLogger init success
+
+[load]2016/03/05 21:09:44.185094 ControllerLogger init success
+
+[load]2016/03/05 21:09:44.185111 load suffix start...
+
+[load]2016/03/05 21:09:44.185148 suffix load success
+
+[load]2016/03/05 21:09:44.185164 loading config start...
+
+[load]2016/03/05 21:09:44.185262 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
+
+[load]2016/03/05 21:27:55.339943 LoadLogger init success
+
+[load]2016/03/05 21:27:55.340222 ControllerLogger init success
+
+[load]2016/03/05 21:27:55.340286 load suffix start...
+
+[load]2016/03/05 21:27:55.340411 suffix load success
+
+[load]2016/03/05 21:27:55.340467 loading config start...
+
+[load]2016/03/05 21:27:55.340785 config load success ApplicationConfig: {ListenAddr::8080 SaveRootPath:/home/happiness/fileservice/} 
