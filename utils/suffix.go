@@ -34,6 +34,11 @@ func Init_suffix() {
 			LoadLogger.Fatalln("pei zhi chan shu error")
 		}
 
+		//check
+		if !strings.HasPrefix(temp[0], ".") || len(temp[1]) != 3 {
+			LoadLogger.Fatalln("pei zhi chan shu ge shi error")
+		}
+
 		SuffixMap[temp[0]] = temp[1]
 
 		if io.EOF == err {

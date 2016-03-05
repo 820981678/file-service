@@ -12,7 +12,6 @@ import (
 
 func checkSaveDir() {
 
-	fmt.Println(utils.ApplicationConfig.SaveRootPath)
 	info, err := os.Stat(utils.ApplicationConfig.SaveRootPath)
 
 	temp := true
@@ -27,9 +26,9 @@ func checkSaveDir() {
 		if err != nil {
 			panic(err)
 		}
-		fmt.Println("create dir success")
+		fmt.Println("create dir " + utils.ApplicationConfig.SaveRootPath)
 	} else {
-		fmt.Println("have dir")
+		fmt.Println("have dir " + utils.ApplicationConfig.SaveRootPath)
 	}
 }
 
@@ -40,7 +39,6 @@ func main() {
 
 	checkSaveDir()
 
-	fmt.Println("file service start...")
 	http.HandleFunc("/downfile", controller.DownFile)
 	http.HandleFunc("/upfile", controller.UpFile)
 
