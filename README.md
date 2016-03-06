@@ -1,10 +1,10 @@
 # file-service
-使用golang编写的文件服务，
+使用golang编写的文件服务
 
-使用第三方包<br/>
+##使用第三方包<br/>
 `github.com/satori/go.uuid`
 
-配置文件：config.json
+##配置文件：config.json
 ```
 {
 	"ListenAddr": ":8080",
