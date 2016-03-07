@@ -12,7 +12,7 @@ import (
 
 func UpFile(response http.ResponseWriter, request *http.Request) {
 
-	s := time.Now().UnixNano()
+	start := time.Now().UnixNano()
 
 	file, fileh, error := request.FormFile("file")
 	if error != nil {
@@ -21,6 +21,8 @@ func UpFile(response http.ResponseWriter, request *http.Request) {
 		return
 	}
 	defer file.Close()
+
+	uptime := (time.Now().UnixNano() - start) / 1000000
 
 	filename := fileh.Filename
 	filehz := path.Ext(filename)
@@ -39,15 +41,16 @@ func UpFile(response http.ResponseWriter, request *http.Request) {
 	}
 	defer uf.Close()
 
-	qusetime := (time.Now().UnixNano() - s) / 1000000
+	pathtime := (time.Now().UnixNano() - start) / 1000000
+
 	_, err = io.Copy(uf, file)
 	if err != nil {
 		response.Write([]byte(`{"code":-1, "msg": "save file error"}`))
 		return
 	}
 
-	fmt.Printf("---> up file name: %s, suffix: %s, usetime: %dms, qusetime: %dms \n",
-		filename, filehz, (time.Now().UnixNano()-s)/1000000, qusetime)
+	fmt.Printf("---> up file name: %s, suffix: %s, upusetime: %dms -> pathtime: %dms -> iocopytime: %dms \n",
+		filename, filehz, uptime, pathtime, (time.Now().UnixNano()-start)/1000000)
 
 	response.Write([]byte("{\"code\":0, \"fileid\":\"" + id + "\"}"))
 }

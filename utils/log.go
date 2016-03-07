@@ -36,7 +36,7 @@ func (c *MyLogger) Infoln(v interface{}) {
 	fmt.Println(v)
 }
 
-func (c *MyLogger) Infof(s string, v interface{}) {
+func (c *MyLogger) Infof(s string, v ...interface{}) {
 	c.Printf(s, v)
 	fmt.Printf(s, v)
 }
