@@ -27,7 +27,7 @@ SaveRootPath：文件存放根目录 <br/>
 ###使用方式
 本服务采用http方式进行文件的上传及下载
 
-- /upfile 上传文件
+- /upfile 上传文件 <br/>
 参数名称：file <br/>
 参数值：需要上传的文件 <br/>
 上传成功后系统将返回json，json字符串格式如下：
@@ -38,6 +38,6 @@ SaveRootPath：文件存放根目录 <br/>
 }
 ```
 
-- /downfile <br/> 下载文件
+- /downfile 下载文件 <br/>
 参数名称：fileid <br/>
 参数值：上传文件时系统返回的json中的fileid字值
