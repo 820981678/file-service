@@ -5,7 +5,7 @@
 `github.com/satori/go.uuid`
 
 ###配置文件
-- config.json 
+- config.json <br/>
 主要配置系统的启动运行环境
 ```
 {
@@ -16,7 +16,7 @@
 ListenAddr：服务开启端口 <br/>
 SaveRootPath：文件存放根目录 <br/>
 
-- suffix.properties
+- suffix.properties <br/>
 主要配置服务器接收的文件类型
 ```
 .jpg=100
