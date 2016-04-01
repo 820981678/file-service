@@ -16,7 +16,7 @@ func GetSavePath(filehz string) (string, string, bool) {
 		return "", "", false
 	}
 
-	t := strings.Replace(time.Now().Format("2006-01-01"), "-", "", -1)
+	t := strings.Replace(time.Now().Format("2006-01-02"), "-", "", -1)
 	dirpath := ApplicationConfig.SaveRootPath + t + "/"
 	err := CheckDirAndCreate(dirpath)
 	if err != nil {

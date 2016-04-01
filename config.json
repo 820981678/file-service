@@ -1,4 +1,5 @@
 {
 	"ListenAddr": ":8080",
-	"SaveRootPath": "/home/happiness/fileservice/"
+	"SaveRootPath": "/home/happiness/fileservice/",
+	"LogFilePath": "/home/happiness/fileservice/log.log"
 }

@@ -33,9 +33,11 @@ func checkSaveDir() {
 }
 
 func main() {
+	
+	utils.Init_config()
 	utils.Init_log()
 	utils.Init_suffix()
-	utils.Init_config()
+	utils.LoadLogger.Infof("config load success ApplicationConfig: %+v \n", utils.ApplicationConfig)
 
 	checkSaveDir()
 

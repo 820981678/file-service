@@ -11,7 +11,7 @@ var LoadLogger *MyLogger
 var ControllerLogger *MyLogger
 
 func Init_log() {
-	logfile, err := os.OpenFile("systemlog.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0666)
+	logfile, err := os.OpenFile(ApplicationConfig.LogFilePath, os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
 		panic(err)
 	}
