@@ -11,7 +11,13 @@ import (
 )
 
 func UpFile(response http.ResponseWriter, request *http.Request) {
-
+	var header string = ""
+	for _, v := range utils.ApplicationDomain {
+		header += (v + ",")
+	}
+	header = string([]rune(header)[ : len(header)])
+	response.Header().Add("Access-Control-Allow-Origin", header)
+	
 	start := time.Now().UnixNano()
 
 	file, fileh, error := request.FormFile("file")

@@ -10,10 +10,9 @@ import (
 func main() {
 	
 	utils.Init_config()
-	
-	utils.Init_log()
 	utils.Init_domain()
 	utils.Init_suffix()
+	utils.Init_log()
 
 	http.HandleFunc("/downfile", controller.DownFile)
 	http.HandleFunc("/upfile", controller.UpFile)
