@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"fmt"
 	"bufio"
 	"io"
 	"os"
@@ -14,7 +15,7 @@ var SuffixMap_F map[string]string
 var suffixValueIndex = 100
 
 func Init_suffix() {
-	LoadLogger.Infoln("load suffix start...")
+	fmt.Println("load suffix start......")
 
 	SuffixMap = make(map[string]string)
 	SuffixMap_F = make(map[string]string)
@@ -51,7 +52,7 @@ func Init_suffix() {
 		SuffixMap_F[v] = k
 	}
 
-	LoadLogger.Infoln("suffix load success")
+	fmt.Println("suffix load success")
 }
 
 func GetSuffixValue(key string) (bool, string) {

@@ -11,6 +11,8 @@ var LoadLogger *MyLogger
 var ControllerLogger *MyLogger
 
 func Init_log() {
+	fmt.Println("load log start......")
+	
 	logfile, err := os.OpenFile(ApplicationConfig.LogFilePath, os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
 		panic(err)
@@ -20,11 +22,11 @@ func Init_log() {
 
 	l := log.New(logfile, "\r\n[load]", log.Ldate|log.Lmicroseconds)
 	LoadLogger = &MyLogger{l}
-	LoadLogger.Infoln("LoadLogger init success")
+	fmt.Println("load LoadLogger complete")
 
 	c := log.New(logfile, "\r\n[controller]", log.Ldate|log.Lmicroseconds)
 	ControllerLogger = &MyLogger{c}
-	LoadLogger.Infoln("ControllerLogger init success")
+	fmt.Println("load ControllerLogger complete")
 }
 
 type MyLogger struct {
