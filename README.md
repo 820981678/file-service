@@ -1,6 +1,5 @@
 # file-service
 使用golang编写的文件服务，本服务基本的上传，下载已经完成开发。<br/>
-随后将添加对文件存储的优化，以及对浏览器跨域上传请求的配置。
 
 ###使用第三方包<br/>
 `github.com/satori/go.uuid`
@@ -18,6 +17,13 @@
 ListenAddr：服务开启端口 <br/>
 SaveRootPath：文件存放根目录 <br/>
 LogFilePath: 系统日志文件目录 <br/>
+
+- domain.properties <br/>
+主要配置系统的浏览器跨域请求
+```
+http://192.168.0.115
+http://10.50.0.105
+```
 
 - suffix.properties <br/>
 主要配置服务器接收的文件类型
