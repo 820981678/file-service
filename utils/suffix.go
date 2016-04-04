@@ -52,7 +52,7 @@ func Init_suffix() {
 		SuffixMap_F[v] = k
 	}
 
-	fmt.Println("suffix load success")
+	fmt.Printf("suffix load success SuffixMap: %v \n", SuffixMap)
 }
 
 func GetSuffixValue(key string) (bool, string) {
